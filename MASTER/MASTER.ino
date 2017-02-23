@@ -29,8 +29,6 @@ int chipSelect = 13;
 int setGameCount = 0; //count game set 
 int present = 0;
 void setup() {
-  // initialize digital pin 8 as an output.
-
   Serial.begin(9600);
   BTserial.begin(38400);
   for (int i = 0; i < sizeof(BluePin) / 2; i++) {
